@@ -68,6 +68,10 @@ eL($chat);
 
 <?php
 $nbr10 = "10";
-$nbr10 = (int)$nbr1;
-echo "La valeur de nbr10 est : " . $nbr10;
-?>
+$nbr10 = (int) $nbr1;
+echo "La valeur de nbr10 est : " . $nbr10 . "<br>";
+
+$pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
+$pieces = explode(" ", $pizza);
+echo "voila " .$pieces[0]. "<br>";
+echo "ainsi que " .$pieces[1] . "<br>";
