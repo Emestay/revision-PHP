@@ -15,7 +15,7 @@ eL($chat);
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Calcul avec TailwindCSS</title>
+    <title>Exo Mathieu PHP</title>
 
   </head>
   <body class="bg-gray-100">
@@ -25,7 +25,7 @@ eL($chat);
         $nbr2 = 23;
         $total = $nbr1 + $nbr2;
       ?>
-      <h1 class="text-3xl font-bold mb-5">Calcul avec </h1>
+      <h1 class="text-3xl font-bold mb-5">Calcul  </h1>
       <div class="flex justify-between">
         <div class="w-1/3">
           <p class="text-lg mb-3">Premier nombre :</p>
@@ -54,5 +54,14 @@ eL($chat);
         </div>
       </div>
     </div>
+    <?php
+    $nbr1 = 10;
+    $nbr2 = 23;
+    echo '<p class="text-lg mb-3">Valeurs initiales : nbr1 = $nbr1 et nbr2 = $nbr2 </p> <br>';
+    $temp = $nbr1;
+    $nbr1 = $nbr2;
+    $nbr2 = $temp;
+    echo '<p class="text-lg mb-3">Valeurs après interversion : nbr1 = $nbr1 et nbr2 = $nbr2 </p> <br>';
+    ?>
   </body>
 </html>
