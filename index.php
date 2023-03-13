@@ -26,4 +26,23 @@ $resultat = remplacerCaracteres($chaine);
 echo $resultat .'<br> <br>';
 
 $tab = [12,42,36,48,55,87,1,59,48,36,73,49];
-echo array_sum($tab);
+echo array_sum($tab).'<br> <br>';
+
+
+
+$min = $tab[0];
+for ($i = 1; $i < count($tab); $i++) {
+    if ($tab[$i] < $min) {
+        $min = $tab[$i];
+    }
+}
+echo $min;
+
+foreach($tab as $temp ){
+    if($temp < $min){
+        $min = $temp;
+    }
+}
+echo $min;
+
+echo min($tab);
