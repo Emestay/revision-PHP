@@ -65,3 +65,9 @@ eL($chat);
     ?>
   </body>
 </html>
+
+<?php
+$nbr10 = "10";
+$nbr10 = (int)$nbr1;
+echo "La valeur de nbr10 est : " . $nbr10;
+?>
