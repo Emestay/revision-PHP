@@ -57,11 +57,11 @@ eL($chat);
     <?php
     $nbr1 = 10;
     $nbr2 = 23;
-    echo '<p class="text-lg mb-3">Valeurs initiales : nbr1 = $nbr1 et nbr2 = $nbr2 </p> <br>';
+    echo '<p class="text-lg mb-3">Valeurs initiales : nbr1 = '.$nbr1.' et nbr2 = '.$nbr2.' </p> <br>';
     $temp = $nbr1;
     $nbr1 = $nbr2;
     $nbr2 = $temp;
-    echo '<p class="text-lg mb-3">Valeurs après interversion : nbr1 = $nbr1 et nbr2 = $nbr2 </p> <br>';
+    echo '<p class="text-lg mb-3">Valeurs après interversion : nbr1 = '.$nbr1.' et nbr2 = '.$nbr2.' </p> <br>';
     ?>
   </body>
 </html>
