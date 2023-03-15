@@ -12,4 +12,3 @@ if(isset($_POST['submit'])){
         echo "Veuillez remplir tous les champs.";
     }
 }
-?>
