@@ -12,14 +12,18 @@ echo '  <script src="https://cdn.tailwindcss.com"></script>';
 <div class="container mx-auto px-4 py-8">
     <form method="post" action="./recup.php" class="bg-white rounded-lg shadow-lg p-8">
         <div class="mb-4">
-            <label for="nbr1" class="block text-gray-700 font-bold mb-2">Nombre 1 :</label>
+            <label for="nbr1" class="block text-gray-700 font-bold mb-2">Prix HT:</label>
             <input type="text" id="nbr1" name="nbr1"
                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
         </div>
 
         <div class="mb-6">
-            <label for="nbr2" class="block text-gray-700 font-bold mb-2">Nombre 2 :</label>
+            <label for="nbr2" class="block text-gray-700 font-bold mb-2">Taux tva:</label>
             <input type="text" id="nbr2" name="nbr2"
+                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div><div class="mb-6">
+            <label for="nbr3" class="block text-gray-700 font-bold mb-2">Quantité:</label>
+            <input type="text" id="nbr3" name="nbr3"
                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
         </div>
 
@@ -29,12 +33,12 @@ echo '  <script src="https://cdn.tailwindcss.com"></script>';
         </div>
     </form>
     <?php
-    if (isset($_GET['resultat'])) {
-        echo "Le résultat est : " . $_GET['resultat'];
+    if (isset($_GET['prix'])) {
+        echo "Le prix TTC est égal à : " . $_GET['prix'] ."€";
     }
     ?>
 </div>
-<canvas id="myCanvas" width="400" height="400"></canvas>
+<canvas  width="400" height="400"></canvas>
 </body>
 </html>
 
