@@ -34,6 +34,7 @@ echo '  <script src="https://cdn.tailwindcss.com"></script>';
     }
     ?>
 </div>
+<canvas id="myCanvas" width="400" height="400"></canvas>
 </body>
 </html>
 
